@@ -1,0 +1,15 @@
+{
+  "name": "sudoku_solver",
+  "version": "1.0.0",
+  "description": "a sudoku solver web application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Mark Hayford",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="solver.js"></script>
+    <script type="text/javascript" src="render.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="page-container">
+        <form id="frm1">
+            <div class="sudoku-board">
+            <div class="quadrant">
+                <div class="space">
+                    <input class="number" id='1'>
+                </div>
+                <div class="space">
+                    <input class="number" id='2'>
+                </div>
+                <div class="space">
+                    <input class="number" id='3'>
+                </div>
+                <div class="space">
+                    <input class="number" id='10'>
+                </div>
+                <div class="space">
+                    <input class="number" id='11'>
+                </div>
+                <div class="space">
+                    <input class="number" id='12'>
+                </div>
+                <div class="space">
+                    <input class="number" id='19'>
+                </div>
+                <div class="space">
+                    <input class="number" id='20'>
+                </div>
+                <div class="space">
+                    <input class="number" id='21'>
+                </div>
+            </div>
+            <div class="quadrant">
+                <div class="space">
+                    <input class="number" id='4'>
+                </div>
+                <div class="space">
+                    <input class="number" id='5'>
+                </div>
+                <div class="space">
+                    <input class="number" id='6'>
+                </div>
+                <div class="space">
+                    <input class="number" id='13'>
+                </div>
+                <div class="space">
+                    <input class="number" id='14'>
+                </div>
+                <div class="space">
+                    <input class="number" id='15'>
+                </div>
+                <div class="space">
+                    <input class="number" id='22'>
+                </div>
+                <div class="space">
+                    <input class="number" id='23'>
+                </div>
+                <div class="space">
+                    <input class="number" id='24'>
+                </div>
+            </div>
+            <div class="quadrant">
+                <div class="space">
+                    <input class="number" id='7'>
+                </div>
+                <div class="space">
+                    <input class="number" id='8'>
+                </div>
+                <div class="space">
+                    <input class="number" id='9'>
+                </div>
+                <div class="space">
+                    <input class="number" id='16'>
+                </div>
+                <div class="space">
+                    <input class="number" id='17'>
+                </div>
+                <div class="space">
+                    <input class="number" id='18'>
+                </div>
+                <div class="space">
+                    <input class="number" id='25'>
+                </div>
+                <div class="space">
+                    <input class="number" id='26'>
+                </div>
+                <div class="space">
+                    <input class="number" id='27'>
+                </div>
+            </div>
+            <div class="quadrant">
+                <div class="space">
+                    <input class="number" id='28'>
+                </div>
+                <div class="space">
+                    <input class="number" id='29'>
+                </div>
+                <div class="space">
+                    <input class="number" id='30'>
+                </div>
+                <div class="space">
+                    <input class="number" id='37'>
+                </div>
+                <div class="space">
+                    <input class="number" id='38'>
+                </div>
+                <div class="space">
+                    <input class="number" id='39'>
+                </div>
+                <div class="space">
+                    <input class="number" id='46'>
+                </div>
+                <div class="space">
+                    <input class="number" id='47'>
+                </div>
+                <div class="space">
+                    <input class="number" id='48'>
+                </div>
+            </div>
+            <div class="quadrant">
+                <div class="space">
+                    <input class="number" id='31'>
+                </div>
+                <div class="space">
+                    <input class="number" id='32'>
+                </div>
+                <div class="space">
+                    <input class="number" id='33'>
+                </div>
+                <div class="space">
+                    <input class="number" id='40'>
+                </div>
+                <div class="space">
+                    <input class="number" id='41'>
+                </div>
+                <div class="space">
+                    <input class="number" id='42'>
+                </div>
+                <div class="space">
+                    <input class="number" id='49'>
+                </div>
+                <div class="space">
+                    <input class="number" id='50'>
+                </div>
+                <div class="space">
+                    <input class="number" id='51'>
+                </div>
+            </div>
+            <div class="quadrant">
+                <div class="space">
+                    <input class="number" id='34'>
+                </div>
+                <div class="space">
+                    <input class="number" id='35'>
+                </div>
+                <div class="space">
+                    <input class="number" id='36'>
+                </div>
+                <div class="space">
+                    <input class="number" id='43'>
+                </div>
+                <div class="space">
+                    <input class="number" id='44'>
+                </div>
+                <div class="space">
+                    <input class="number" id='45'>
+                </div>
+                <div class="space">
+                    <input class="number" id='52'>
+                </div>
+                <div class="space">
+                    <input class="number" id='53'>
+                </div>
+                <div class="space">
+                    <input class="number" id='54'>
+                </div>
+            </div>
+            <div class="quadrant">
+                <div class="space">
+                    <input class="number" id='55'>
+                </div>
+                <div class="space">
+                    <input class="number" id='56'>
+                </div>
+                <div class="space">
+                    <input class="number" id='57'>
+                </div>
+                <div class="space">
+                    <input class="number" id='64'>
+                </div>
+                <div class="space">
+                    <input class="number" id='65'>
+                </div>
+                <div class="space">
+                    <input class="number" id='66'>
+                </div>
+                <div class="space">
+                    <input class="number" id='73'>
+                </div>
+                <div class="space">
+                    <input class="number" id='74'>
+                </div>
+                <div class="space">
+                    <input class="number" id='75'>
+                </div>
+            </div>
+            <div class="quadrant">
+                <div class="space">
+                    <input class="number" id='58'>
+                </div>
+                <div class="space">
+                    <input class="number" id='59'>
+                </div>
+                <div class="space">
+                    <input class="number" id='60'>
+                </div>
+                <div class="space">
+                    <input class="number" id='67'>
+                </div>
+                <div class="space">
+                    <input class="number" id='68'>
+                </div>
+                <div class="space">
+                    <input class="number" id='69'>
+                </div>
+                <div class="space">
+                    <input class="number" id='76'>
+                </div>
+                <div class="space">
+                    <input class="number" id='77'>
+                </div>
+                <div class="space">
+                    <input class="number" id='78'>
+                </div>
+            </div>
+            <div class="quadrant">
+                <div class="space">
+                    <input class="number" id='61'>
+                </div>
+                <div class="space">
+                    <input class="number" id='62'>
+                </div>
+                <div class="space">
+                    <input class="number" id='63'>
+                </div>
+                <div class="space">
+                    <input class="number" id='70'>
+                </div>
+                <div class="space">
+                    <input class="number" id='71'>
+                </div>
+                <div class="space">
+                    <input class="number" id='72'>
+                </div>
+                <div class="space">
+                    <input class="number" id='79'>
+                </div>
+                <div class="space">
+                    <input class="number" id='80'>
+                </div>
+                <div class="space">
+                    <input class="number" id='81'>
+                </div>
+            </div>
+            </div>
+        </form>
+        <div class="right-side-container">
+            <div class="button" onclick="doItAll()">Solve</div>
+            <div id='result'></div>
+        </div>
+    </div>
+    <script>
+        var doItAll = () => {
+            var grid = main()
+            mainRender(grid)
+        }
+    </script>
+  </body>
+</html>
